@@ -92,7 +92,7 @@ function stopRecording() {
 
   let track = globalStream.getTracks()[0];
   track.stop();
-  window.postMessage("Post message from web", 'wholeString');
+  document.postMessage("Post message from web", 'wholeString');
   input.disconnect(processor);
   processor.disconnect(context.destination);
   context.close().then(function () {
