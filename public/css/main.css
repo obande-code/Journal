@@ -24,7 +24,7 @@ a:hover {
 audio {
     width: 300px;
     height: auto;
-    backgorund-color: red;
+    background-color: red;
 }
 
 .wrapper {
@@ -80,20 +80,16 @@ audio {
 }
 
 .nl-Adjective {
-    background-color: #1ada47;
     padding: 3px;
     border-radius: 5px;
 }
 
 .nl-Noun {
-    background-color: #151ffa;
     padding: 3px;
     border-radius: 5px;
-    color: white;
 }
 
 .nl-Verb {
-    background-color: #ff1616;
     padding: 3px;
     border-radius: 5px;
 }

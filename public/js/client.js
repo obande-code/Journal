@@ -15,7 +15,8 @@ let bufferSize = 2048,
   context,
   processor,
   input,
-  globalStream;
+  globalStream,
+  wholeString;
 
 //vars
 let audioElement = document.querySelector('audio'),
@@ -172,7 +173,7 @@ socket.on('speechData', function (data) {
 
 //================= Juggling Spans for nlp Coloring =================
 function addTimeSettingsInterim(speechData) {
-  let wholeString = speechData.results[0].alternatives[0].transcript;
+  wholeString = speechData.results[0].alternatives[0].transcript;
   console.log(wholeString);
 
   let nlpObject = nlp(wholeString).out('terms');
