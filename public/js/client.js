@@ -92,7 +92,7 @@ function stopRecording() {
 
   let track = globalStream.getTracks()[0];
   track.stop();
-  document.postMessage("Post message from web", 'wholeString');
+  window.ReactNativeWebView && window.ReactNativeWebView.postMessage("wholestring");
   input.disconnect(processor);
   processor.disconnect(context.destination);
   context.close().then(function () {
